@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestQueueEmails;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,22 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('sending-queue-emails', [TestQueueEmails::class,'sendTestEmails']);
+
+
+//https://viblo.asia/p/tim-hieu-queue-trong-laravel-Az45bgbwKxY
+//https://www.section.io/engineering-education/implementing-laravel-queues/
+//https://www.twilio.com/blog/queueing-in-laravel
+
+//php artisan queue:failed
+//
+//php artisan queue:retry all
+//
+//php artisan queue:flush
+//
+//php artisan queue:retry {failedJobId}
+//
+//php artisan queue:forget {failedJobId}
+
+//php artisan horizon
