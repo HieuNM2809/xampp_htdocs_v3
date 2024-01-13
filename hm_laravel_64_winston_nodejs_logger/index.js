@@ -2,38 +2,47 @@ const express = require("express");
 const logger = require("./Logs/logger");
 const PORT = process.env.PORT || "5555";
 const app = express();
+const fs = require("fs");
+const path = require("path");
 
 app.use(express.json())
 
-app.get("/", (req, res) => {
+app.get("/test-logs", (req, res) => {
 
-    logger.log("debug", "Hello, World!"); 
-    logger.debug("debug ne");
-    logger.error("error ne");
-    logger.info("info ne");
+  logger.log("debug", "Hello, World!");
+  logger.debug("debug ne");
+  logger.error("error ne");
+  logger.info("info ne");
 
-
-
-    // using debug method directly
-    res.json({ method: req.method, message: "Hello World", ...req.body });
+  // using debug method directly
+  res.json({ method: req.method, message: "Test logs success !", ...req.body });
 });
 
-app.get('/404', (req, res) => {
-    logger.error("404 error"); //error method
-    logger.debug("The is the 404 route.");
-    res.sendStatus(404);
-})
+// Middleware để xử lý việc lấy nội dung từ tệp log cho một ngày cụ thể
+app.get("/logs/:date/:token", (req, res) => {
+  const token   = req.params.token;
+  const logDate = req.params.date;
 
-app.get("/user", (req, res) => {
-    try {
-      throw new Error("Invalid user");
-    } catch (error) {
-      logger.error("Auth Error: invalid user");
-      logger.debug("The is the user route.");
-      res.status(500).send("Error!");
-    }
-  });
+  if(token != '123456'){
+    res.status(401).send("You do not have permission to view");
+  }
+
+  // Đường dẫn tới tệp log cho ngày cụ thể
+  const logFilePath = path.join(__dirname, "Logs", `combined-${logDate}.log`); //combined-2024-01-13.log
+
+  // Kiểm tra xem tệp log có tồn tại không
+  if (fs.existsSync(logFilePath)) {
+    // Đọc nội dung từ tệp log
+    const logContent = fs.readFileSync(logFilePath, "utf8");
+
+    // Gửi nội dung log về client
+    res.send(logContent);
+  } else {
+    // Trả về lỗi nếu tệp không tồn tại
+    res.status(404).send("Log file not found for the specified date");
+  }
+});
 
 app.listen(parseInt(PORT, 10), () => {
-    console.log(`Listening on http://localhost:${PORT}`);
+  console.log(`Listening on http://localhost:${PORT}`);
 });

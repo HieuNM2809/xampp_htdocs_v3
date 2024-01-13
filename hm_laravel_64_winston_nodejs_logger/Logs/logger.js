@@ -5,9 +5,8 @@ require('winston-daily-rotate-file');
 const fileRotateTransport = new transports.DailyRotateFile({
     filename: './Logs/combined-%DATE%.log', // file lưu theo ngày
     datePattern: 'YYYY-MM-DD',
-    maxFiles: '14d',        // xóa sao 14 ngày
+    maxFiles: '14d',                        // xóa sao 14 ngày
 });
-
 
 const logger = createLogger({
     level: "debug",
@@ -17,7 +16,7 @@ const logger = createLogger({
             format: 'YYYY-MM-DD hh:mm:ss.SSS A',
         }),
         align(),
-        printf((info) => `[${info.timestamp}] ${info.level} : ${info.message}`)
+        printf((info) => `[${info.timestamp}] ${info.level} : ${info.message} </br>`)
     ),
     //transports: [new transports.Console()], // logs ra console
     transports: [
