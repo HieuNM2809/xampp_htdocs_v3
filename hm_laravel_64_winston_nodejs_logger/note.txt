@@ -2,3 +2,9 @@
 
 https://betterstack.com/community/guides/logging/how-to-install-setup-and-use-winston-and-morgan-to-log-node-js-applications/
 https://signoz.io/blog/winston-logger/ 
+https://stackify.com/winston-logging-tutorial/
+https://www.digitalocean.com/community/tutorials/how-to-use-winston-to-log-node-js-applications-on-ubuntu-20-04
+https://reflectoring.io/node-logging-winston/
+https://github.com/winstonjs/winston
+https://copyprogramming.com/howto/c-node-js-winston-logger-tutorial-code-example    
+https://coralogix.com/blog/complete-winston-logger-guide-with-hands-on-examples/

@@ -15,7 +15,7 @@ const logger = createLogger({
         timestamp({
             format: 'YYYY-MM-DD hh:mm:ss.SSS A',
         }),
-        align(),
+        align(),    
         printf((info) => `[${info.timestamp}] ${info.level} : ${info.message} </br>`)
     ),
     //transports: [new transports.Console()], // logs ra console

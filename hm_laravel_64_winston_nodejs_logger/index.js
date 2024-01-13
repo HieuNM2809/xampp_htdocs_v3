@@ -9,10 +9,15 @@ app.use(express.json())
 
 app.get("/test-logs", (req, res) => {
 
-  logger.log("debug", "Hello, World!");
-  logger.debug("debug ne");
-  logger.error("error ne");
-  logger.info("info ne");
+  logger.log('silly', "127.0.0.1 - there's no place like home");
+  logger.log('debug', "127.0.0.1 - there's no place like home");
+  logger.log('verbose', "127.0.0.1 - there's no place like home");
+  logger.log('info', "127.0.0.1 - there's no place like home");
+  logger.log('warn', "127.0.0.1 - there's no place like home");
+  logger.log('error', "127.0.0.1 - there's no place like home");
+  logger.info("127.0.0.1 -  info there's no place like home");
+  logger.warn("127.0.0.1 - warn there's no place like home");
+  logger.error("127.0.0.1 - error there's no place like home");
 
   // using debug method directly
   res.json({ method: req.method, message: "Test logs success !", ...req.body });
