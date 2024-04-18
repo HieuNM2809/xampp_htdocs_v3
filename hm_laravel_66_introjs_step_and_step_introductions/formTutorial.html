@@ -92,7 +92,12 @@
                 ],
 
                 // Không hiện thì lại
-                dontShowAgain: true
+                dontShowAgain: true,
+
+                // thanh load
+                showProgress: true,
+            }).onbeforeexit(function () {
+              console.log("Trước khi thoát?");
             }).start();
         }
 
