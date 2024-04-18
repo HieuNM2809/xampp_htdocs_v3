@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng ký với Intro.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/introjs.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="registration-form">
+        <label for="username">Tên đăng nhập:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Mật khẩu:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+    <button id="tutorial1">Hướng dẫn sử dụng</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intro.js/7.2.0/intro.min.js"></script>
+    <script>
+
+        function loadTutorial(loadAgain = false) {
+
+            console.log(loadAgain);
+            if (loadAgain) {
+                document.cookie = "introjs-dontShowAgain=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            }
+
+            introJs().setOptions({
+                // Danh sách các bước
+                steps: [
+                    {
+                        element: document.querySelector("#username"),
+                        intro: "Nhập tên đăng nhập của bạn vào đây.",
+                        position: "right"
+                    },
+                    {
+                        element: document.querySelector("#email"),
+                        intro: '<img src="https://i.giphy.com/media/ujUdrdpX7Ok5W/giphy.webp" onerror="this.onerror=null;this.src=\'https://i.giphy.com/ujUdrdpX7Ok5W.gif\';" alt="">',
+                        position: "left"
+                    },
+                    {
+                        element: document.querySelector("#password"),
+                        intro: "Nhập mật khẩu của bạn vào đây.",
+                        position: "bottom"
+                    },
+                    {
+                        element: document.querySelector("button"),
+                        intro: "Nhấn vào nút Đăng ký để hoàn tất quá trình đăng ký.",
+                        position: "top"
+                    }
+                ],
+
+                // Không hiện thì lại
+                dontShowAgain: true
+            }).start();
+        }
+
+        document.querySelector("#tutorial1").addEventListener("click", function() {
+            loadTutorial(true);
+        });
+        document.addEventListener("DOMContentLoaded", loadTutorial(false));
+    </script>
+</body>
+
+</html>
