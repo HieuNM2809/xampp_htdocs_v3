@@ -1,0 +1,5 @@
+Run: 
+
+1. config db
+2. npx sequelize-cli db:migrate  // tạo db
+3. node --watch server           // run project
