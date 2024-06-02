@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_63_queue_v2/tests/Unit" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/tests/Feature" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/tests/Unit" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/asm89/stack-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/carbonphp/carbon-doctrine-types" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/facade/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/facade/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/facade/ignition-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/fruitcake/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/clock" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/object-reflector" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-iconv" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/hm_laravel_71_pluck_chuck_queue/vendor/webmozart/assert" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
