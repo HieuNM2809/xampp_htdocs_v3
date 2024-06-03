@@ -3,9 +3,10 @@ const mongoose = require('mongoose');
 const bookRouter = require('./routes/books');
 
 const app = express();
+app.use(express.json());  // Middleware to parse JSON
 
 // Kết nối đến cơ sở dữ liệu MongoDB
-mongoose.connect('mongodb://localhost:27017/testDatabase', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb://127.0.0.1:27017/testDatabase', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Connected to MongoDB");
     })
