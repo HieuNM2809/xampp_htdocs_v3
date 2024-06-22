@@ -1,1 +1,3 @@
 node_modules
+/hm_laravel_73_nodejs_NProgress/.idea
+hm_laravel_73_nodejs_NProgress/package-lock.json

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NProgress Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    <script src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const orderButton = document.getElementById('orderButton');
+            orderButton.addEventListener('click', () => {
+                NProgress.start();
+                fetch('/api/order') // Gửi yêu cầu đặt hàng đến backend
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok.');
+                        }
+                        return response.json(); // Hoặc xử lý dữ liệu trả về nếu cần
+                    })
+                    .catch(error => {
+                        console.error('There has been a problem with your fetch operation:', error);
+                        // Xử lý lỗi ở đây, ví dụ: thông báo cho người dùng
+                    });
+            });
+
+            socket.on('orderProgress', (progress) => {
+                NProgress.set(progress / 100);
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Giỏ hàng của bạn</h1>
+<ul>
+</ul>
+<button id="orderButton">Đặt hàng</button>
+</body>
+</html>
