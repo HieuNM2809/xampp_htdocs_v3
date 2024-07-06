@@ -1,0 +1,21 @@
+
+Thêm
+[2024-07-06 10:04:06] local.INFO: saving
+[2024-07-06 10:04:06] local.INFO: creating
+[2024-07-06 10:04:06] local.INFO: created
+[2024-07-06 10:04:06] local.INFO: saved
+-----
+
+Sửa
+
+[2024-07-06 10:04:38] local.INFO: retrieved
+[2024-07-06 10:04:38] local.INFO: saving
+[2024-07-06 10:04:38] local.INFO: updating
+[2024-07-06 10:04:38] local.INFO: updated
+[2024-07-06 10:04:38] local.INFO: saved
+-----
+
+Xoá
+[2024-07-06 10:04:55] local.INFO: retrieved
+[2024-07-06 10:04:55] local.INFO: deleting
+[2024-07-06 10:04:55] local.INFO: deleted
