@@ -6,37 +6,36 @@ use Illuminate\Console\Command;
 
 class TestLoadingCommand extends Command
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'command:name';
+    protected $signature   = 'process:users';
+    protected $description = 'Process all users and display a progress bar';
 
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Command description';
-
-    /**
-     * Create a new command instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
-    /**
-     * Execute the console command.
-     *
-     * @return int
-     */
     public function handle()
     {
-        return 0;
+
+
+        // --- Chọn
+        $groupId = $this->ask('Chon: ');
+        if (!$groupId) {
+            return 0;
+        }
+
+        // --- Loading
+        $users = [];
+        for ($i = 1; $i <= 10; $i++) {
+            $users[] = ['id' => $i, 'name' => 'User ' . $i];
+        }
+
+        $this->info('This might take a while...');
+        $start = now();
+
+        $this->output->progressStart(count($users));
+
+        foreach ($users as $user) {
+            $this->output->progressAdvance();
+            sleep(1);
+        }
+        $this->output->progressFinish();
+        $time = $start->diffInSeconds(now()) / 60;
+        $this->info("Processed in {$time} minutes, ".now());
     }
 }
