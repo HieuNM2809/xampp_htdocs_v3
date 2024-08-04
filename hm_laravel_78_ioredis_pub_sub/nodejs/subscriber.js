@@ -17,7 +17,7 @@ const subscribeToChannel = (channel) => {
 };
 
 // Ví dụ subscribe vào một kênh
-subscribeToChannel('channel-1');
+subscribeToChannel('mychannel');
 
 
 

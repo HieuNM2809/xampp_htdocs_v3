@@ -15,6 +15,6 @@ var num  = 1;
 // Ví dụ publish một thông điệp sau 1 giây
 setInterval(() => {
     console.log(`num ${num}`);
-    publishMessage('channel-1', 'Hello, world!' + num);
+    publishMessage('mychannel', 'Hello, world!' + num);
     num++;
 }, 1000);
