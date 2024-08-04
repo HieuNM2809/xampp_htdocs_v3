@@ -14,9 +14,11 @@ class PublishMessage extends Command
     {
         $channel = $this->argument('channel');
         $message = $this->argument('message');
+        Redis::set('lala1', 'lulu');
 
         while(true){
-            Redis::publish($channel, $message);
+            sleep(2);
+            Redis::publish('mychannel', $message);
             $this->info("Message published to channel {$channel}");
         }
     }

@@ -16,4 +16,7 @@ const redisConfig = {
 const redisPublisher = new Redis(redisConfig);
 const redisSubscriber = new Redis(redisConfig);
 
+redisPublisher.select(0);
+redisSubscriber.select(0);
+
 module.exports = { redisPublisher, redisSubscriber };
